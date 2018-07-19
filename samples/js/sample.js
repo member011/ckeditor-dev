@@ -55,7 +55,7 @@ var initSample = ( function() {
 			return config.plugins.split( ',' ).indexOf( name ) > -1;
 		}
 
-		return Boolean( CKEDITOR.plugins.get( name ) );
+		return !!CKEDITOR.plugins.get( name );
 	}
 } )();
 
